@@ -56,6 +56,7 @@ Como parte del equipo de data de una empresa, el área de análisis de datos le 
 + Película que más duró según año, plataforma y tipo de duración
 
 + Cantidad de series y películas por rating
+
 <br/>
 
 
