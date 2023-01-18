@@ -95,7 +95,7 @@ def save_as_json(df):
     # Exportar a JSON: convierte el DataFrame a JSON con orientación 'records' (lista de diccionarios)
     df_json = df.to_json(orient='records')
     # Guarda el JSON en un archivo .json
-    with open('app/src/db/movies_scores.json','w') as file:
+    with open('app/db/movies_scores.json','w') as file:
         file.write(df_json)
 
 if __name__ == '__main__':

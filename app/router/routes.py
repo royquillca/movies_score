@@ -1,7 +1,7 @@
 import pandas as pd
 from pathlib import Path
 
-file_path = Path("src/db/movies_scores.json")
+file_path = Path("app/db/movies_scores.json")
 movies = pd.read_json(file_path)
 
 
@@ -76,4 +76,4 @@ def get_rating_count(rating):
         'movies_per_rating': movies_per_rating,
         'series_per_rating': series_per_rating
     }
-# print(get_rating_count('18+'))
+print(get_rating_count('18+'))

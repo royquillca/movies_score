@@ -1,7 +1,5 @@
-from fastapi import FastAPI
-# from src.model.movies import MoviesScore
-from src.router.routes import get_word_count, get_score_count, get_second_score, get_longest, get_rating_count
-print(get_second_score('amazon'))
+from fastapi import FastAPI, Response
+from app.router.routes import get_word_count, get_score_count, get_second_score, get_longest, get_rating_count
 
 
 app = FastAPI(
@@ -10,9 +8,11 @@ app = FastAPI(
     version='0.0.1'
 )
 
-@app.get('/hello_pi')
+
+# Probando el servidor en root "/"
+@app.get('/')
 async def root():
-    return {'message': 'Incializando el proyecto en FastAPI'}
+    return Response(content='<h2 align="center">Respuesta de inicialización exitosa del servidor de FastAPI</h2>', media_type='text/html')
 
 # Request 1
 @app.get('/get_word_count/{platform}/{word}')
@@ -43,5 +43,3 @@ async def pregunta_4(platform:str,duration_type:str,year:int):
 async def pregunta_5(rating:str):
     result = get_rating_count(rating)
     return result
-
-

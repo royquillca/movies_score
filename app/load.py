@@ -46,7 +46,7 @@ def upload_data_to_mysql(table_model, file_name):
         # Crear tabla en MySQL
         table_model.create_table()
         # Abrir el archivo json y cargar en una variable
-        with open(f'app/data/{file_name}.json', 'r') as file:
+        with open(f'app/db/{file_name}.json', 'r') as file:
             data = json.load(file)
         # Insertar los datos en la tabla creada
         query = table_model.insert_many(data)
