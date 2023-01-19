@@ -82,15 +82,16 @@ Recomiendo agregar la ruta del archivo ``deta.exe`` al PATH de PowerShell ejecut
 * Ya podrá realizar las consultas respectivas a la API usando Swagger UI.
 ## Contribuciones
 
-Este proyecto es de código abierto y está abierto a contribuciones y sugerencias. Si desea contribuir, por favor siga las siguientes instrucciones:
+Este proyecto es perfecto para desarrollar habilidades de Data Engineering, es de código abierto y está abierto a contribuciones y sugerencias. Si desea contribuir, por favor siga las siguientes instrucciones:
 
-Haga un fork del repositorio
-Cree una nueva rama con su característica o corrección
-Realice sus cambios y asegúrese de seguir las mejores prácticas de codificación y documentación
-Realice un pull request y espere la revisión y aprobación del equipo de desarrollo.
-Licencia
-Este proyecto está licenciado bajo la licencia MIT
+* Haga un fork del repositorio
+* Cree una nueva rama con su característica o corrección
+* Realice sus cambios y asegúrese de seguir las mejores prácticas de codificación y documentación
+* Realice un pull request y espere la revisión y aprobación del equipo de desarrollo.
+## Licencia
+
+* Este proyecto está licenciado bajo la licencia MIT [MIT](https://opensource.org/licenses/MIT)
 
 ## Contacto
 
-Si tiene alguna pregunta o comentario sobre este proyecto, no dude en ponerse en contacto a través de un dm a mi Linkedin [Roy Quillca](https://www.linkedin.com/in/royquillca/) o abriendo un issue en este repositorio.
+Si tiene alguna pregunta o comentario sobre este proyecto, no dude en ponerse en contacto a través de un mensaje directo a mi Linkedin [Roy Quillca](https://www.linkedin.com/in/royquillca/) o abriendo un issue en este repositorio.
