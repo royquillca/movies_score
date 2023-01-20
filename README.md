@@ -14,7 +14,7 @@ Este proyecto se enfoca en el desarrollo de una API utilizando el framework Fast
 En resumidas líneas se han completado con los objetivos propuesto del Proyecto Individual, sin embargo, se ha obviado algunas de las transformaciones para que quede normalizado la base de datos que se va ha consumir mediante la API.
 De forma específica, se ha completado los siguientes objetivos:
 
-- [x] Transformaciones en las bases de datos: [Link](https://github.com/royquillca/movies_score/blob/main/app/data_exploratory.ipynb)
+- [x] Transformaciones en las bases de datos: [Link](https://github.com/royquillca/movies_score/blob/main/app/transformations.ipynb)
 - [x] Desarrollo de la API.
 - [x] Deployment: [Link](https://0l6d6u.deta.dev/)
 - [x] Video: [Link]()
