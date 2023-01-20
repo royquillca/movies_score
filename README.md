@@ -6,10 +6,11 @@
 
 ## Descripción del proyecto
 
-Este proyecto se enfoca en el desarrollo de una API utilizando el framework FastAPI para comunicar y disponibilizar datos para el equipo de análisis de datos de una empresa. El objetivo principal es realizar transformaciones específicas en los datos y disponibilizarlos a través de endpoints accesibles mediante la API.
+Este proyecto se enfoca en el desarrollo de una API utilizando el framework FastAPI para comunicar y disponibilizar datos para el equipo de análisis de datos de una empresa. El objetivo principal es realizar transformaciones específicas en los datos y disponibilizarlos a través de endpoints accesibles mediante la API que finalmente debe ser desplegada en Deta.
 
 [Ver más sobre el proyecto](https://github.com/royquillca/movies_score/blob/main/app/data_exploratory.ipynb)
-## Evaluacion del cumplimiento de los obejtivos
+## Evaluación del cumplimiento de lotivos
+
 En resumidas líneas se han completado con los objetivos propuesto del Proyecto Individual, sin embargo, se ha obviado algunas de las transformaciones para que quede normalizado la base de datos que se va ha consumir mediante la API.
 De forma específica, se ha completado los siguientes objetivos:
 
@@ -50,6 +51,7 @@ La API cuenta con los siguientes endpoints:
 Para realizar el deploy de esta aplicación se utilizó [Deta](https://www.deta.sh/) (no necesita dockerizacion) Sin embargo, también se puede usar [Railway](https://railway.app/) y [Render](https://render.com/)
 
 **Requisitos previos:**
+
   * Servidor con sistema operativo Windows que tenga instalado PowerShell y/o Git Bash
   * Tener instalado ``Python`` (version mayor a 3.9) y ``pip 22.3.1``
   * Registrarse en [Deta](https://www.deta.sh/)
@@ -78,6 +80,12 @@ Recomiendo agregar la ruta del archivo ``deta.exe`` al PATH de PowerShell ejecut
 
 * Iniciar sesión con la línea de comandos (CLI) de Deta ejecutando ``deta login`` en Power Shell.
 * Desplegar la aplicación API ejecutando ``deta new`` y a través del log podrá observar un dictionario que contiene ``"endpoint": "https://0l6d6u.deta.dev/"`` (este es el mío el/la suy@ será diferente). Al acceder al link podrá ver su proyecto de API desarrollado en FastAPI desplegado en Deta. La interacción es lo mismo como `cuando ejecutamos en local con ``uvicorn``.
+* Otro error que puede encontrarse al ejecutar ``deta new`` es similar a:
+```bash
+Error: failed to update dependencies: error on one or more dependencies, 
+no dependencies were added, see output for details.
+```
+Asegúrate de que la codificación del archivo de ``requirements.txt`` sea ``UTF-8`` y revise el siguiente [link del issue](https://docs.deta.sh/docs/common_issues/).
 * Para mayor detalle revise usted la documentación de Deta en [Documentación de despliegue de FastAPI en Deta](https://fastapi.tiangolo.com/deployment/deta/#__tabbed_1_2)
 * Ya podrá realizar las consultas respectivas a la API usando Swagger UI.
 ## Contribuciones
@@ -87,7 +95,7 @@ Este proyecto es perfecto para desarrollar habilidades de Data Engineering, es d
 * Haga un fork del repositorio
 * Cree una nueva rama con su característica o corrección
 * Realice sus cambios y asegúrese de seguir las mejores prácticas de codificación y documentación
-* Realice un pull request y espere la revisión y aprobación del equipo de desarrollo.
+* Realice un pull request y espere la revisión y aprobación.
 ## Licencia
 
 * Este proyecto está licenciado bajo la licencia MIT [MIT](https://opensource.org/licenses/MIT)

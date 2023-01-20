@@ -1,4 +1,4 @@
-from model.movies import MoviesScores, database
+from router.routes import MoviesScores, database
 from decouple import config
 import pymysql
 import json

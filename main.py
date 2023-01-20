@@ -1,12 +1,20 @@
 from fastapi import FastAPI, Response
 from app.router.routes import get_word_count, get_score_count, get_second_score, get_longest, get_rating_count
-
+from app.router.routes import database as connection
 
 app = FastAPI(
     title="Lista de scores de películas/series",
     description="Proyecto que disponibiliza la lista de puntuaciones de películas de diferentes fuentes de diversos servicios de suscripción de streaming; Amazon Prime, Netflix, Hulu, Disney Plus.",
     version='0.0.1'
 )
+
+# Inicializando el servidor de FastAPI
+@app.on_event('startup')
+def startup():
+    if connection.is_closed():
+        connection.connect()
+        print('Inicializando el servidor de FastAPI')
+
 
 
 # Probando el servidor en root "/"
@@ -43,3 +51,13 @@ async def pregunta_4(platform:str,duration_type:str,year:int):
 async def pregunta_5(rating:str):
     result = get_rating_count(rating)
     return result
+
+
+
+# Finalizando el servidor FastAPI
+@app.on_event('shutdown')
+def shutdown():
+    if not connection.is_closed():
+        connection.close()
+        print('Finalizando el servidor de FastAPI')
+        
