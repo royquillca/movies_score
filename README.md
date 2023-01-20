@@ -17,7 +17,7 @@ De forma específica, se ha completado los siguientes objetivos:
 - [x] Transformaciones en las bases de datos: [Link](https://github.com/royquillca/movies_score/blob/main/app/transformations.ipynb)
 - [x] Desarrollo de la API.
 - [x] Deployment: [Link](https://0l6d6u.deta.dev/)
-- [x] Video: [Link]()
+- [x] Video: [Link](https://www.youtube.com/watch?v=z4TVxmZ3NKM&t=126s)
 
 ## Requerimientos
 
