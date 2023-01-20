@@ -9,7 +9,7 @@
 Este proyecto se enfoca en el desarrollo de una API utilizando el framework FastAPI para comunicar y disponibilizar datos para el equipo de análisis de datos de una empresa. El objetivo principal es realizar transformaciones específicas en los datos y disponibilizarlos a través de endpoints accesibles mediante la API que finalmente debe ser desplegada en Deta.
 
 [Ver más sobre el proyecto](https://github.com/royquillca/movies_score/blob/main/app/data_exploratory.ipynb)
-## Evaluación del cumplimiento de lotivos
+## Evaluación del cumplimiento de los objetivos
 
 En resumidas líneas se han completado con los objetivos propuesto del Proyecto Individual, sin embargo, se ha obviado algunas de las transformaciones para que quede normalizado la base de datos que se va ha consumir mediante la API.
 De forma específica, se ha completado los siguientes objetivos:
