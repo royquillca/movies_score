@@ -90,7 +90,6 @@ def reorder_cols(df):
 # Exportación de la data
 #-----------------------#
 def save_as_json(df):
-    # path_file = Path('app/src/db/movies_scores.json')
     # Exportar a JSON: convierte el DataFrame a JSON con orientación 'records' (lista de diccionarios)
     df_json = df.to_json(orient='records')
     # Guarda el JSON en un archivo .json
